@@ -1,0 +1,254 @@
+/* Readify IELTS - Results, Answer Review, Notebook & Analytics */
+
+/* --- Results Overview Hero --- */
+.results-hero {
+  background: linear-gradient(135deg, var(--bg-surface) 0%, var(--bg-surface-subtle) 100%);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  margin-bottom: var(--space-8);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.results-score-box {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.band-score-circle {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), #0284c7);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+}
+
+.band-score-value {
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.band-score-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  opacity: 0.9;
+  margin-top: 2px;
+}
+
+.results-meta-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  flex: 1 1 400px;
+}
+
+.stat-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  text-align: center;
+}
+
+.stat-value {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.stat-label {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Results Breakdown Sections */
+.breakdown-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+/* --- Answer Review Cards --- */
+.review-item-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  margin-bottom: var(--space-4);
+  box-shadow: var(--shadow-xs);
+  transition: border-color var(--transition-fast);
+}
+
+.review-item-card.is-correct {
+  border-left: 5px solid var(--color-success);
+}
+
+.review-item-card.is-incorrect {
+  border-left: 5px solid var(--color-danger);
+}
+
+.review-item-card.is-unanswered {
+  border-left: 5px solid var(--color-warning);
+}
+
+.review-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.answers-comparison-box {
+  display: flex;
+  gap: var(--space-4);
+  margin: var(--space-3) 0;
+  padding: var(--space-3);
+  background-color: var(--bg-surface-subtle);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  flex-wrap: wrap;
+}
+
+.comparison-col {
+  flex: 1 1 200px;
+}
+
+.comparison-label {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 2px;
+}
+
+.comparison-val {
+  font-weight: 700;
+}
+
+.comparison-val.correct-val { color: var(--color-success-hover); }
+.comparison-val.wrong-val { color: var(--color-danger); text-decoration: line-through; }
+
+/* Evidence Callout */
+.evidence-callout {
+  background-color: var(--color-primary-subtle);
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  margin: var(--space-3) 0;
+  font-size: var(--text-sm);
+}
+
+.evidence-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+  font-size: var(--text-xs);
+}
+
+.evidence-quote {
+  font-style: italic;
+  color: var(--text-body);
+}
+
+/* Explanation Text */
+.explanation-box {
+  font-size: var(--text-sm);
+  color: var(--text-body);
+  line-height: var(--leading-relaxed);
+  margin-top: var(--space-3);
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--border-light);
+}
+
+/* --- Vocabulary Notebook Cards --- */
+.vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.vocab-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.vocab-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.vocab-word {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 2px;
+}
+
+.vocab-pronounce {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  margin-bottom: var(--space-2);
+}
+
+.vocab-vi {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-main);
+  margin-bottom: var(--space-1);
+}
+
+.vocab-en {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.vocab-context {
+  font-size: var(--text-xs);
+  font-style: italic;
+  background-color: var(--bg-surface-subtle);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  border-left: 2px solid var(--color-accent);
+  color: var(--text-body);
+}
+
+/* --- Responsive Results --- */
+@media (max-width: 768px) {
+  .results-meta-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .results-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

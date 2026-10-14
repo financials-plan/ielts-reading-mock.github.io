@@ -1,0 +1,199 @@
+/* Readify IELTS - Design Tokens & Theme Variables */
+:root {
+  /* Color Palette - Light Mode (Educational, Calm, Editorial) */
+  --color-primary: #0284c7;           /* Sky 600 - Academic focus */
+  --color-primary-hover: #0369a1;     /* Sky 700 */
+  --color-primary-light: #e0f2fe;     /* Sky 100 */
+  --color-primary-subtle: #f0f9ff;    /* Sky 50 */
+  
+  --color-accent: #f59e0b;            /* Warm Amber CTA */
+  --color-accent-hover: #d97706;
+  --color-accent-light: #fef3c7;
+  
+  --color-success: #10b981;           /* Emerald */
+  --color-success-hover: #059669;
+  --color-success-light: #d1fae5;
+  --color-success-subtle: #ecfdf5;
+  
+  --color-warning: #f97316;           /* Orange */
+  --color-warning-light: #ffedd5;
+  
+  --color-danger: #ef4444;            /* Rose/Red */
+  --color-danger-hover: #dc2626;
+  --color-danger-light: #fee2e2;
+  --color-danger-subtle: #fef2f2;
+  
+  --color-info: #6366f1;              /* Indigo */
+  --color-info-light: #e0e7ff;
+
+  /* Surfaces & Backgrounds */
+  --bg-canvas: #f8fafc;              /* Slate 50 */
+  --bg-surface: #ffffff;             /* Pure white */
+  --bg-surface-elevated: #ffffff;
+  --bg-surface-subtle: #f1f5f9;       /* Slate 100 */
+  --bg-surface-muted: #e2e8f0;        /* Slate 200 */
+  --bg-workspace: #f8fafc;
+  --bg-passage: #ffffff;
+
+  /* Text Colors */
+  --text-main: #0f172a;               /* Slate 900 */
+  --text-body: #334155;               /* Slate 700 */
+  --text-muted: #64748b;              /* Slate 500 */
+  --text-subtle: #94a3b8;             /* Slate 400 */
+  --text-inverse: #ffffff;
+
+  /* Borders & Dividers */
+  --border-light: #e2e8f0;            /* Slate 200 */
+  --border-main: #cbd5e1;             /* Slate 300 */
+  --border-strong: #94a3b8;           /* Slate 400 */
+  --border-focus: #0284c7;
+
+  /* Reading Highlighter Markers */
+  --hl-yellow: rgba(254, 240, 138, 0.7);
+  --hl-yellow-border: #facc15;
+  --hl-green: rgba(187, 247, 208, 0.7);
+  --hl-green-border: #4ade80;
+  --hl-blue: rgba(186, 230, 253, 0.7);
+  --hl-blue-border: #38bdf8;
+  --hl-pink: rgba(251, 207, 232, 0.7);
+  --hl-pink-border: #f472b6;
+
+  /* Question Status Indicators */
+  --status-answered: #0284c7;
+  --status-unanswered: #e2e8f0;
+  --status-marked: #f59e0b;
+  --status-correct: #10b981;
+  --status-incorrect: #ef4444;
+
+  /* Typography Scales */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: 'Charter', 'Merriweather', 'Lora', Georgia, 'Times New Roman', serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --text-xs: 0.75rem;     /* 12px */
+  --text-sm: 0.875rem;    /* 14px */
+  --text-base: 1rem;      /* 16px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.25rem;     /* 20px */
+  --text-2xl: 1.5rem;     /* 24px */
+  --text-3xl: 1.875rem;   /* 30px */
+  --text-4xl: 2.25rem;    /* 36px */
+
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+  --leading-loose: 2;
+
+  /* Spacing Scale */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+
+  /* Border Radius */
+  --radius-xs: 0.25rem; /* 4px */
+  --radius-sm: 0.375rem;/* 6px */
+  --radius-md: 0.5rem;  /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-xl: 1rem;    /* 16px */
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* App Dimensions */
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 72px;
+  --header-height: 64px;
+  --workspace-topbar-height: 60px;
+}
+
+/* Dark Mode Tokens */
+[data-theme="dark"] {
+  --color-primary: #38bdf8;           /* Sky 400 */
+  --color-primary-hover: #7dd3fc;     /* Sky 300 */
+  --color-primary-light: #082f49;     /* Sky 950 */
+  --color-primary-subtle: #0c4a6e;    /* Sky 900 */
+
+  --color-accent: #fbbf24;            /* Amber 400 */
+  --color-accent-hover: #f59e0b;
+  --color-accent-light: #451a03;
+
+  --color-success: #34d399;           /* Emerald 400 */
+  --color-success-hover: #10b981;
+  --color-success-light: #064e3b;
+  --color-success-subtle: #022c22;
+
+  --color-warning: #fb923c;
+  --color-warning-light: #431407;
+
+  --color-danger: #f87171;            /* Red 400 */
+  --color-danger-hover: #ef4444;
+  --color-danger-light: #450a0a;
+  --color-danger-subtle: #2b0b0b;
+
+  --color-info: #818cf8;
+  --color-info-light: #1e1b4b;
+
+  /* Surfaces & Backgrounds - Dark */
+  --bg-canvas: #090d16;              /* Deep dark blue-black */
+  --bg-surface: #111827;             /* Gray 900 */
+  --bg-surface-elevated: #1f2937;    /* Gray 800 */
+  --bg-surface-subtle: #1e293b;      /* Slate 800 */
+  --bg-surface-muted: #334155;       /* Slate 700 */
+  --bg-workspace: #0f172a;
+  --bg-passage: #111827;
+
+  /* Text Colors - Dark */
+  --text-main: #f8fafc;              /* Slate 50 */
+  --text-body: #cbd5e1;              /* Slate 300 */
+  --text-muted: #94a3b8;             /* Slate 400 */
+  --text-subtle: #64748b;            /* Slate 500 */
+  --text-inverse: #0f172a;
+
+  /* Borders & Dividers - Dark */
+  --border-light: #1e293b;           /* Slate 800 */
+  --border-main: #334155;            /* Slate 700 */
+  --border-strong: #475569;          /* Slate 600 */
+  --border-focus: #38bdf8;
+
+  /* Reading Highlighters - Dark (Higher contrast against dark theme) */
+  --hl-yellow: rgba(234, 179, 8, 0.4);
+  --hl-yellow-border: #eab308;
+  --hl-green: rgba(34, 197, 94, 0.4);
+  --hl-green-border: #22c55e;
+  --hl-blue: rgba(56, 189, 248, 0.4);
+  --hl-blue-border: #38bdf8;
+  --hl-pink: rgba(236, 72, 153, 0.4);
+  --hl-pink-border: #ec4899;
+
+  /* Question Status - Dark */
+  --status-answered: #38bdf8;
+  --status-unanswered: #334155;
+  --status-marked: #fbbf24;
+  --status-correct: #34d399;
+  --status-incorrect: #f87171;
+
+  /* Shadows - Dark */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.7);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.8);
+}

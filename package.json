@@ -1,0 +1,20 @@
+{
+  "name": "readify-ielts",
+  "version": "1.0.0",
+  "description": "Readify IELTS - Comprehensive, Accessible & Production-Ready IELTS Reading Practice Platform",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "node server.js",
+    "test": "node tests/run-tests.js"
+  },
+  "keywords": [
+    "ielts",
+    "ielts-reading",
+    "reading-practice",
+    "educational-platform",
+    "learning-experience"
+  ],
+  "author": "Readify IELTS Team",
+  "license": "MIT"
+}
